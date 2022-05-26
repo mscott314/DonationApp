@@ -1,0 +1,36 @@
+Project B Team 1 Sprint 2 Retrospective
+- **Description of User Stories and Test Cases we completed this sprint**
+  - Completed User Stories
+    - Donor Signup: As a donor, I want to be able to create a valid account so that I can log in and donate items
+    - Donor Login: As a donor, I want to be able to log in to my account so that I can donate items
+    - Recipient Signup: As an organization, I want to be able to create a valid account so that I can log in and receive items
+    - Recipient Login: As a recipient, I want to be able to log in to my account so that I can receive items.
+    - Post New Item: As a donator, I want to be able to post an item to donator so that organizations can see them
+      - We finished this user story from last sprint so that new item postings are connected to a donor account, and items can be posted with an image
+  - Test Cases (espresso tests)
+    - Donor Signup with all good input
+    - Donor Signup under 18 years old
+    - Donor Signup with existing user
+    - Donor Signup missing input
+    - Donor Login with valid account
+    - Donor Login with wrong password
+    - Donor Login forgot password with valid account
+    - Donor Login forgot password without valid account
+    - Recipient Signup with all good input
+    - Recipient Signup without a .org email address
+    - Recipient Signup missing input
+    - Recipient Signup with existing user
+    - Recipient Login with valid account
+    - Recipient Login not organization
+    - Post new item with an image
+  - Test Cases (Junit)
+    - Test newItemInfo class constructor, getter, and setter methods
+- **Team Reflection**
+  - Chloe worked on creating the activities for donor signup and login, recipient signup and login, making an authentication Firebase database to store user signup credentials, creating a forgot password option for donor and recipient login, fixing the donor main activity so it only shows the items that the current user has posted, and creating espresso and unit tests
+  - Matthew Scott worked on the main activity for the recipient, created layout and first iteration of list item filter system.
+  - Megan worked on being able to select and upload images to the firebase database/storagebase. New recyclerView's and cardView's were created to be able to display data back out of the databases. Created activity for the imageAdapter and created several methods within other existing activities to give function to the upload image tasks.
+  - This sprint went a little better than the first one because we were more familier with Android Studio and github, which allowed us to finish more user stories and fix some of the functionality we worked on during the last sprint
+  - As a a team we had more communication and were better at assigning specific tasks that we all wanted to work on this sprint
+  - The transition to online classes and the current pandemic has made it harder for some of us to work on this project and some of the functionalities of the app ended up being harder to implement than expected
+  - Next sprint we will continue to communicate and assign specific tasks at the beginning of the sprint and we will try to accomplish more user stories on the recipient side of the app
+ 
